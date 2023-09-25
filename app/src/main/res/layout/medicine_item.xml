@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/meds_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_menu_hover"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:elevation="12dp"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/itemImage_home"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="12dp"
+        android:src="@drawable/asset"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemName_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Meds Name"
+            android:textColor="@color/baby_blue"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/itemManufacture_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Meds Manufacturer" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. "
+                android:textColor="@color/blue"/>
+
+            <TextView
+                android:id="@+id/itemPrice_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meds Price"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

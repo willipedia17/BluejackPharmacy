@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/applogonobg"
+        android:contentDescription="@string/logo" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="@string/register"
+        android:textColor="@color/cust_Black"
+        android:textSize="24sp"
+        android:paddingBottom="5dp"/>
+
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/account"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/fullname"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+
+            android:textColor="@color/black"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/edtTextPhone"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/edtEmailAddress"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="#546E7A" />
+
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/confirmpass"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="#546E7A" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="280dp"
+            android:layout_height="54dp"
+            android:layout_marginHorizontal="150dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/baby_blue"
+            android:text="@string/register"
+            android:textColor="@color/cust_Black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alreadyhaveanaccount" />
+
+            <Button
+                android:id="@+id/goToLoginPage"
+                android:layout_width="280dp"
+                android:layout_height="54dp"
+                android:layout_margin="10dp"
+                android:text="@string/gotoLogPage"
+                android:textColor="@color/baby_blue"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/milky_white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

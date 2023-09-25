@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/applogonobg"
+        android:contentDescription="@string/logo"/>
+
+    <TextView
+        android:id="@+id/textLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:paddingBottom="5dp"
+        android:text="@string/login"
+        android:textColor="@color/cust_Black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtEmailAddress"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/edtTextPassword"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="#546E7A"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="280dp"
+            android:layout_height="54dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/baby_blue"
+            android:text="@string/login"
+            android:textColor="@color/cust_Black" />
+
+        <TextView
+            android:id="@+id/textDontHaveAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donthaveaccount"
+            android:textColor="@color/gray"/>
+
+        <Button
+            android:id="@+id/goToRegPage"
+            android:layout_width="280dp"
+            android:layout_height="54dp"
+            android:layout_margin="10dp"
+            android:text="@string/gotoRegPage"
+            android:textColor="@color/baby_blue"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/milky_white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

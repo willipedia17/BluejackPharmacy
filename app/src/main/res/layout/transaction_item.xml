@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_menu_hover"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/itemImage_trans"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="12dp"
+        android:src="@drawable/asset"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/transDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="transDate"
+            android:textColor="#C9C9C9"
+            />
+
+        <TextView
+            android:id="@+id/itemName_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Meds Name"
+            android:textColor="@color/baby_blue"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/itemQty_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Meds Qty" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. "
+                android:textColor="@color/blue"/>
+
+            <TextView
+                android:id="@+id/itemPrice_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meds Price"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_edit"/>
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/ic_delete"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

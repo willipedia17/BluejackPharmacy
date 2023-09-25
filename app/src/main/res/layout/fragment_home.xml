@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment"
+    android:background="@drawable/bg">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/appBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/cust_Black">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/appLogo"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_margin="30dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:contentDescription="@string/logo"-->
+<!--            android:src="@drawable/logo" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/logOut"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="190dp"-->
+<!--            android:background="@drawable/ic_logout"-->
+<!--            android:clickable="true"-->
+<!--            android:contentDescription="@string/logo"-->
+<!--            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />-->
+
+<!--    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medsRV"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        tools:listitem="@layout/medicine_item"
+        />
+</LinearLayout>
